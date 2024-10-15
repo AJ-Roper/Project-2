@@ -838,6 +838,10 @@ header .row {
 
 /*START*/
 
+#start {
+    padding: 0 32px;
+}
+
 #start .row {
   position: relative;
   overflow: hidden;
@@ -1004,4 +1008,126 @@ footer {
 
 .footer__social--link:nth-child(1) {
     padding: 8px 11px;
+}
+
+@media(max-width: 1024px)  {
+
+    .section__para {
+        font-size: 16px;
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+
+    .section__title {
+        font-size: 48px;
+    }
+
+    /*NAV*/
+
+.nav__links {
+    display: none;
+}
+
+.btn__menu {
+    display: block;
+    padding-right: 4rem;
+    padding-top: 2rem;
+}
+
+.fa-bars {
+    scale: 200%;
+}
+
+/*HEADER*/ 
+
+header .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.header__img--wrapper {
+    margin-top: 48px;
+}
+
+/*FEATURES*/
+
+
+.features {
+    max-width: 768px;
+}
+
+.feature {
+    width: calc(50%);
+}
+
+/*QUALITY WORK*/
+
+#quality {
+    padding-left: 1rem;
+}
+
+.quality__description {
+    margin-right: 0;
+    padding-right: 48px;
+}
+
+/*VALUES*/
+
+#values {
+    padding-left: 1.3rem;
+}
+
+.values__list {
+    flex-direction: column;
+    max-width: 320px;
+}
+
+.value {
+    margin-top: 40px;
+}
+
+/*PRICING*/
+
+.plans {
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan {
+    margin-right: 0px;
+}
+
+/*TESTIMONIALS*/ 
+
+#testimonials {
+    padding: 0 1.3rem;
+}
+
+/*START*/
+
+.start__row {
+    flex-direction: column;
+}
+
+.start__title {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+}
+
+.start__buttons {
+    width: auto;
+    margin-top: 24px;
+}
+
 }
