@@ -203,6 +203,11 @@ img {
   background: transparent;
   border: none;
   transition: all 300ms ease;
+  font-size: 30px;
+}
+
+.menu--open .modal {
+  display: flex;
 }
 
 .btn__menu--close {
@@ -1046,12 +1051,38 @@ footer {
 
   .btn__menu {
     display: block;
-    padding-right: 4rem;
-    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
   }
 
-  .fa-bars {
-    scale: 200%;
+  .menu--open .modal {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .modal__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal__link--primary{
+    color: #fff;
+    padding: 12px 32px;
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
+  }
+
+  .btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+  }
+
   }
 
   /*HEADER*/
